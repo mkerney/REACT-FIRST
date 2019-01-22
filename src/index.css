@@ -38,9 +38,6 @@ body {
   .slide-move .box-size.box1 {
     background-color: #352;
     z-index: -1;
-  }
-  .slide-move .box-size.box2 {
-    background-color: #552;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -54,16 +51,15 @@ body {
   .toggle-shit li:hover {
     cursor: pointer;
   }
-  .slide-up,
-  .slide-up-one{
-    position: absolute;
-    left: 0;
-    top: 0;
+  .slide-up{
     animation: slides-move 1s;
     z-index: 2 !important;
     transition: all 0.3s ease;
     transform: translate(0, 0px) scale(1);
     opacity: 1;
+  }
+  .slide-down{
+    z-index: 1 !important;
   }
   @keyframes slides-move{
       0%{
